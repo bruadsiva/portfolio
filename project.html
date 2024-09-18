@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      html,
+      body {
+        overflow-x: hidden;
+      }
+      .home_page {
+        height: 650px;
+        padding: 50px;
+        box-shadow: 0px 4px 30px rgba(6, 6, 22, 0.863);
+        border: 5px solid rgba(3, 3, 30, 0.368);
+        background: linear-gradient(145deg, black, rgb(227, 10, 10) 60%, black);
+      }
+      .home_page h1 {
+        color: rgb(18, 18, 18);
+        position: fixed;
+        margin-top: -10px;
+        font-size: 3rem;
+        text-shadow: 0px 0px 10px rgb(243, 9, 9), 0px 0px 10px rgb(255, 0, 0),
+          0px 0px 10px rgb(255, 0, 0), 0px 0px 10px rgb(255, 47, 0);
+      }
+      .home_page h1:hover {
+        color: rgb(251, 251, 253);
+        cursor: pointer;
+      }
+      .home_page ul {
+        float: right;
+        margin-top: -30px;
+        margin-right: 50px;
+      }
+      .home_page ul li {
+        display: inline-block;
+        padding: 40px;
+      }
+      .home_page ul li a {
+        z-index: 2;
+        position: fixed;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(252, 249, 249);
+        text-shadow: 0px 0px 30px rgb(25, 25, 26), 0px 0px 30px rgb(20, 20, 20),
+          0px 0px 30px rgb(19, 20, 20);
+      }
+      .home_page ul li a:hover {
+        /* border: 2px solid; */
+        padding: 4px;
+
+        border-radius: 5px 5px;
+        text-shadow: 0px 0px 10px rgb(238, 240, 241),
+          0px 0px 10px rgb(234, 238, 241), 0px 0px 10px rgb(224, 228, 231),
+          0px 0px 10px rgb(222, 227, 230);
+        transition: all 0.5s;
+        transform: scale(20px);
+      }
+      .image_2 {
+        height: 300px;
+        width: 450px;
+        z-index: 2;
+        margin-top: 100px;
+        float: left;
+      }
+      .pic_1 {
+        height: 250px;
+        width: 400px;
+        margin-left: -90px;
+        margin-top: 250px;
+        z-index: -1;
+        border: 4px solid rgb(15, 15, 14);
+      }
+      img:hover {
+        box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff,
+          0px 0px 10px #ffffff, 0px 0px 5px #ffffff;
+        /* transition: all 1s;
+       transform: scale(20px); */
+      }
+      .head_para {
+        height: 200px;
+        width: 500px;
+        margin-top: -300px;
+        float: right;
+        padding: 20px;
+      }
+      .first_para {
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+      .first_head {
+        font-size: 3rem;
+        padding-bottom: 20px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      footer{
+       text-align: center;
+       padding: 20px;
+       color: #ffffff;
+
+      }
+      @media only screen and (max-width:1200px){
+        .home_page {
+        height: 850px;
+        padding: 50px;
+        box-shadow: 0px 4px 30px rgba(6, 6, 22, 0.863);
+        border: 5px solid rgba(3, 3, 30, 0.368);
+        background: linear-gradient(145deg, black, rgb(227, 10, 10) 60%, black);
+      }
+      .home_page h1 {
+        color: rgb(18, 18, 18);
+        position: fixed;
+        margin-top: -10px;
+        font-size: 3rem;
+        text-shadow: 0px 0px 10px rgb(243, 9, 9), 0px 0px 10px rgb(255, 0, 0),
+          0px 0px 10px rgb(255, 0, 0), 0px 0px 10px rgb(255, 47, 0);
+      }
+      .home_page h1:hover {
+        color: rgb(251, 251, 253);
+        cursor: pointer;
+      }
+      .home_page ul {
+        float: right;
+        margin-top: -30px;
+        margin-right: 50px;
+      }
+      .home_page ul li {
+        display: inline-block;
+        padding: 40px;
+      }
+      .home_page ul li a {
+        z-index: 2;
+        position: fixed;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(252, 249, 249);
+        text-shadow: 0px 0px 30px rgb(25, 25, 26), 0px 0px 30px rgb(20, 20, 20),
+          0px 0px 30px rgb(19, 20, 20);
+      }
+      .home_page ul li a:hover {
+        /* border: 2px solid; */
+        padding: 4px;
+
+        border-radius: 5px 5px;
+        text-shadow: 0px 0px 10px rgb(238, 240, 241),
+          0px 0px 10px rgb(234, 238, 241), 0px 0px 10px rgb(224, 228, 231),
+          0px 0px 10px rgb(222, 227, 230);
+        transition: all 0.5s;
+        transform: scale(20px);
+      }
+      .image_2 {
+        height: 300px;
+        width: 450px;
+        z-index: 2;
+        margin-top: 100px;
+        float: left;
+      }
+      .pic_1 {
+        height: 250px;
+        width: 400px;
+        margin-left: -90px;
+        margin-top: 250px;
+        z-index: -1;
+        border: 4px solid rgb(15, 15, 14);
+      }
+      img:hover {
+        box-shadow: 0px 0px 5px #ffffff, 0px 0px 10px #ffffff,
+          0px 0px 10px #ffffff, 0px 0px 5px #ffffff;
+        /* transition: all 1s;
+       transform: scale(20px); */
+      }
+      .head_para {
+        height: 200px;
+        width: 500px;
+        margin-top: -300px;
+        float: right;
+        padding: 20px;
+      }
+      .first_para {
+        font-size: 1.2rem;
+        color: #ffffff;
+      }
+      .first_head {
+        font-size: 3rem;
+        padding-bottom: 20px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      footer{
+       text-align: center;
+       padding: 20px;
+       color: #ffffff;
+
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="home_page">
+        <h1>
+          <marquee behavior="slide" direction="top"> NetFlix</marquee>
+        </h1>
+
+        <ul>
+          <li><a href="#">project</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./resume1.jpeg" target="_blank">Resume</a></li>
+        </ul>
+        <div>
+          <img src="./images/netflix.jpg" alt="" class="image_2" />
+          <img src="./images/netflix 2.jpeg" alt="" class="pic_1" />
+        </div>
+        <div class="head_para">
+          <h2 class="first_head">Lern more About Netflix</h2>
+          <p class="first_para">
+            Netflix is a global Streaming service that offers a vast library of
+            Movies. i Have create a Netflix Front page with responsive layout
+            and Dark theme ,High quality thumbnailes .
+          </p>
+        </div>
+        <br /><br /><br />
+        <hr />
+        <br><br>
+        <footer>
+            &copy 2024  Netflix Developed by siva.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

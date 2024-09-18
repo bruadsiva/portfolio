@@ -1,0 +1,301 @@
+*{
+   padding: 0px;
+   margin: 0px;
+ 
+}
+html,body{
+    overflow-x: hidden;
+}
+.home_page{
+height: 800px;
+padding: 50px;
+box-shadow: 0px 4px 30px rgba(6, 6, 22, 0.863);
+border: 5px solid rgba(3, 3, 30, 0.368);
+background :linear-gradient(90deg,black,blue,black) ;
+}
+.home_page h1{
+
+ color: aliceblue;
+ position: fixed;
+ margin-top: -10px;
+ font-size: 3rem;
+ text-shadow: 0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255);
+}
+.home_page h1:hover{
+    color:blue;
+cursor: pointer;
+}
+.home_page ul{
+    float: right;
+    margin-top: -30px;
+    margin-right: 50px;
+}
+.home_page ul li{
+  display: inline-block; 
+  padding: 40px;
+}
+.home_page ul li a{
+    z-index: 2;
+   position: fixed;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255);
+}
+.home_page ul li a:hover{
+   /* border: 2px solid; */
+   padding: 4px;
+   background-color: rgb(11, 132, 213);
+   border-radius: 15px 2px ;
+   /* text-shadow: none; */
+   transition: all .5s;
+   transform:scale(20px)
+  
+}
+/* This is for div home*/
+.home_page .image1{
+    height:400px;
+    width: 400px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 8vw;
+    margin-top: 23vh; 
+    
+    box-shadow: 0px 0px 50px rgb(0, 149, 255) ,  0px 0px 50px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255);
+}
+.home_page .image1:hover{
+    transition: all 3s;
+    transform: skewX(180deg);
+}
+
+.home_div{
+    color: white;
+    border-radius: 30px 150px 0px 80px;
+    float: right;
+    width: 40vw;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 60px;
+    box-shadow: 0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255);
+    background:linear-gradient(rgb(209, 8, 136) ,rgb(7, 241, 241));
+}
+.home_div:hover{
+    border-radius: 100px 100px 100px 10px;
+    transition: all 1.5s;
+   
+}
+.home_div h2{
+    font-size:3rem;
+    padding: 10px;
+}
+.home_div h4{
+   font-size: 20px;
+  font-weight: 100;
+}
+/* next div  2  oustt buw4  bwu4b usjsr r bj rjb rjryjj*/
+
+
+.second_page{
+  
+    height: 700px;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(100deg, blue , rgb(18, 170, 252) , rgb(6, 6, 32));
+
+}
+.second_page h1{
+    font-size: 3rem;
+    padding-top: 100px;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second_page ul{
+margin: 10%;
+}
+.second_page ul li{
+    padding: 40px;
+    width: 70vw;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-top: 1px solid;
+    cursor: pointer;
+}
+.second_page ul li:hover{
+    background-color: rgba(233, 230, 226, 0.199);
+    transition: all 0.5s;
+    transform: scalex(10px);
+}
+.second_page ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    float: left;
+    color: antiquewhite;
+    
+}
+.second_page ul li i{
+    margin: 10px;
+    float: right;
+}
+.third_page{
+    height: 400px;
+
+   background: linear-gradient(180deg, rgb(28, 28, 53) , rgb(9, 18, 23) , rgb(6, 6, 32));
+
+}
+.third_page h2{
+    font-size: 2rem;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    color: rgb(250, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.third_page ul li{
+padding: 10px;
+margin-left: 200px;
+list-style-type: none;
+}
+.third_page ul li a{
+ color: white;
+ list-style-type:disc;
+}
+.third_page ul li a:hover{
+    color: rgba(149, 161, 161, 0.796);
+}
+@media only screen and (max-width:1200px){
+    .home_page h1{
+      color: aqua;
+    }
+    .home_page .image1{
+        height:300px;
+        width: 300px;
+        margin-left: 7vw;
+        margin-top: 40vh; 
+    }
+    .home_div{
+        color: white;
+        border-radius: 30px 150px 0px 30px;
+        float: right;
+        width: 40vw;
+        padding: 10px;
+        margin-top: 100px;
+        margin-right: 20px;
+        box-shadow: 0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255) ,  0px 0px 10px rgb(0, 149, 255);
+        background:linear-gradient(rgb(209, 8, 136) ,rgb(7, 241, 241));
+    }
+}
+@media only screen and (max-width:900px){
+    .home_page h1{
+        color: rgb(0, 255, 89);
+      }
+      .home_page .image1{
+        height:350px;
+        width: 350px;
+        /* margin-left: 22vw; */
+        margin-top: 0px; 
+        text-align: center;
+    }
+    .home_div{
+        color: white;
+        border-radius: 30px 150px 0px 30px;
+        float: right;
+        width: 70vw;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width:600px){
+    .home_page{
+        height: 1000px;
+        padding: 50px;
+        box-shadow: 0px 4px 30px rgba(6, 6, 22, 0.863);
+        border: 5px solid rgba(3, 3, 30, 0.368);
+        background :linear-gradient(90deg,black,blue,black) ;
+        }
+    .home_page h1{
+        color: rgb(0, 255, 89);
+        position: static;
+      }
+      .home_page ul{
+        float: right;
+        margin-top: -90px;
+        margin-right: 0px;
+     
+    }
+      .home_page .image1{
+        height:300px;
+        width: 300px;
+        /* margin-left: 22vw; */
+        margin-top: 0px; 
+        text-align: center;
+    }
+    .home_div{
+        color: white;
+        border-radius: 10px 10px 10px 10px;
+        float: right;
+        width: 70vw;
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 0px;
+        
+    }
+    .second_page h1{
+        font-size: 3rem;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        color: azure;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .second_page ul{
+        margin: 10px;
+       
+        }
+        .second_page ul li{
+            padding: 40px;
+            width: 70vw;
+            list-style-type: none;
+            background-color: rgba(0, 0, 0, 0.322);
+            border-top: 1px solid;
+            cursor: pointer;
+           
+        }
+       
+        .second_page ul li a{
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            float: left;
+            color: antiquewhite;
+            
+            
+        }
+        .second_page ul li i{
+            margin: 10px;
+            float: right;
+        }
+        .third_page{
+            height: 400px;
+        
+           background: linear-gradient(180deg, rgb(28, 28, 53) , rgb(9, 18, 23) , rgb(6, 6, 32));
+        
+        }
+        .third_page h2{
+            font-size: 2rem;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            padding-top: 50px;
+            color: rgb(250, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .third_page ul li{
+        padding: 10px;
+        margin-left: 50px;
+        list-style-type: none;
+        }
+        .third_page ul li a{
+         color: white;
+         list-style-type:disc;
+        }
+}
